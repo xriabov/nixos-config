@@ -26,6 +26,10 @@
 
 	  home-manager.users.pathetic_gull = import ./home;
 	}
+
+	nixvim = {
+          homeManagerModules.nixvim = import ./home/programs/nvim
+	}
       ];
     };
   };
