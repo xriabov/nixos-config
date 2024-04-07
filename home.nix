@@ -26,7 +26,7 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
-  }
+  };
 
   home.stateVersion = "23.11";
 
