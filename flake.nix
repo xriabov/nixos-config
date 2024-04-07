@@ -27,6 +27,7 @@
 
 	  home-manager.users.pathetic_gull = import ./home;
 	}
+        nixvim.nixosModules.nixvim
       ];
     };
   };
