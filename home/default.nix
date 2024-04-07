@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./programs
+    ./shell
+  ];
+
   home.username = "pathetic_gull";
   home.homeDirectory = "/home/pathetic_gull";
 
