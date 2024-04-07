@@ -1,8 +1,4 @@
-{ config, pkgs, ... }: {
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
-  
+{ pkgs, ... }: {
   programs.nixvim = {
     enable = true;
     colorschemes.gruvbox.enable = true;
