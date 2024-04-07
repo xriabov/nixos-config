@@ -21,7 +21,7 @@
       modules = [
         ./hosts/nixos
         nixvim.nixosModules.nixvim
-        ./home/programs/nvim
+        ./modules/nvim
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
