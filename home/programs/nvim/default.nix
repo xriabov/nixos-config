@@ -1,6 +1,7 @@
-{ pkgs, nixvim, config, ... }: {
+{ pkgs, ... }: {
   programs.nixvim {
     enable = true;
-    colorschemes.melange.enable = true;
 
+    colorschemes.gruvbox.enable = true;
+    plugins.lightline.enable = true;
 }
