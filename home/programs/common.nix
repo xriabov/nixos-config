@@ -23,6 +23,6 @@
 
     # fun
     spotify
-    wine wine64
+    wine64
   ];
 }
