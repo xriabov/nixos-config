@@ -1,8 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nixvim, ... }:
 
 {
   programs.home-manager.enable = true;
   imports = [
+    nixvim.homeManagerModules.nixvim
     ./programs
     ./shell
   ];
