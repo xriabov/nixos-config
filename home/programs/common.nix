@@ -24,10 +24,5 @@
     # fun
     spotify
     wine wine64
-    steam
   ];
-  
-  programs = {
-    steam.enable = true;
-  };
 }
