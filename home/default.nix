@@ -12,4 +12,15 @@
   home.stateVersion = "23.11";
 
   programs.home-manager.enable = true;
+  home-manager.users.pathetic_gull = {
+      systemd.user.startServices = "sd-switch";
+      xdg = {
+        enable = true;
+        userDirs = {
+          enable = true;
+          createDirectories = true;
+        };
+      };
+      home.stateVersion = "23.11";
+    };
 }
