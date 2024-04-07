@@ -3,7 +3,7 @@
 {
   programs.home-manager.enable = true;
   imports = [
-    nixvim.homeManagerModules.nixvim
+    <nixvim>.homeManagerModules.nixvim
     ./programs
     ./shell
   ];
