@@ -15,12 +15,11 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nxvim, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nixvim, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./hosts/nixos
-        ./modules/nvim
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
