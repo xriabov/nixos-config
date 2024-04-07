@@ -1,4 +1,4 @@
-{ pkgs, nxvim, ... }: {
+{ pkgs, ... }: {
   programs.nixvim = {
     enable = true;
 
