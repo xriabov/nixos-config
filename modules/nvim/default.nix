@@ -1,5 +1,5 @@
-{ pkgs, ... }: {
-  programs.nixvim = {
+{ pkgs, nxvim ... }: {
+  programs.nxvim = {
     enable = true;
 
     colorschemes.gruvbox.enable = true;
