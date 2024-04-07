@@ -1,6 +1,6 @@
 {
   imports = [
-    ./vim
+    ./nvim
     ./common.nix
     ./git.nix
   ];
