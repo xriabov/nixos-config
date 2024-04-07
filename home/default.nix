@@ -4,8 +4,6 @@
   programs.home-manager.enable = true;
   imports = [
     nixvim.homeManagerModules.nixvim
-    nixvim.nixosModules.nixvim
-    nixvim.nixDarwinModules.nixvim
     ./programs
     ./shell
   ];
