@@ -20,8 +20,6 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/nixos
-        
-        nxvim.nixosModules.nixvim
         ./modules/nvim
 	home-manager.nixosModules.home-manager
 	{

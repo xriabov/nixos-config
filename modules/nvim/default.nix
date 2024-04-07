@@ -1,4 +1,7 @@
 { pkgs, nxvim, ... }: {
+  imports = [
+    nxvim.nixosModules.nixvim
+  ];
   programs.nixvim = {
     enable = true;
 
