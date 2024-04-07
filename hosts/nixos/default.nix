@@ -97,6 +97,7 @@
     packages = with pkgs; [
       firefox
     ];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
