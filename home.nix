@@ -12,6 +12,7 @@
 
     # utils
     jq
+    tree
 
     # misc
     which
