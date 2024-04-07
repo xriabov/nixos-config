@@ -1,4 +1,7 @@
 { config, pkgs, ... }: {
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
   programs.nvim = {
     enable = true;
     package = pkgs.neovim-nightly;
