@@ -98,6 +98,7 @@
       firefox
     ];
     shell = pkgs.zsh;
+    ignoreShellProgramCheck = true;
   };
 
   # Allow unfree packages
