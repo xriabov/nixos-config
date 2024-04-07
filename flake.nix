@@ -20,6 +20,7 @@
         ./hosts/nixos
 
         nixvim.homeManagerModules.nixvim
+        nixvim.nixosModules.nixvim
 
 	home-manager.nixosModules.home-manager
 	{
