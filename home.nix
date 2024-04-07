@@ -21,7 +21,7 @@
     enable = true;
     userName = "Nikita Riabov";
     userEmail = "atikinvobair@gmail.com";
-  }
+  };
 
   programs.bash = {
     enable = true;
