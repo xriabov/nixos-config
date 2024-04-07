@@ -103,16 +103,6 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
-  environment.systemPackages = with pkgs; [
-    wget
-    rustup
-    git
-    docker
-    lshw # for listing hw specs, was req. for nvidia
-    wine wine64 # both 32 & 64 bit versions
-    spotify
-    helvum # pipewire gui
-  ];
 
   programs.nix-ld = {
     enable = true;
@@ -124,11 +114,6 @@
   programs.neovim = {
     enable = true;
     defaultEditor = true;
-  };
-
-
-  programs.steam = {
-    enable = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are

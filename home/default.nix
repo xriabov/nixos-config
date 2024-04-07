@@ -4,26 +4,6 @@
   home.username = "pathetic_gull";
   home.homeDirectory = "/home/pathetic_gull";
 
-  home.packages = with pkgs; [
-    # archive
-    zip
-    xz
-    unzip
-
-    # utils
-    jq
-    tree
-
-    # misc
-    which
-  ];
-
-  programs.git = {
-    enable = true;
-    userName = "Nikita Riabov";
-    userEmail = "atikinvobair@gmail.com";
-  };
-
   programs.bash = {
     enable = true;
     enableCompletion = true;
