@@ -58,20 +58,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  services.pipewire.extraConfig.pipewire."91-null-sinks" = {
-  context.objects = [
-    {
-      factory = "adapter";
-      args = {
-        factory.name     = "support.null-audio-sink";
-        node.name        = "Main-Output-Proxy";
-        node.description = "Main Output";
-        media.class      = "Audio/Sink";
-        audio.position   = "FL,FR";
-      };
-    }
-  ];
-};
 
   # Video stuff
   hardware.opengl = {
