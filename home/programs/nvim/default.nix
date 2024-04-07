@@ -1,7 +1,8 @@
 { pkgs, nixvim, ... }: {
   imports = [
-    nixvim.homeManagerModules.nixvim
+    nixvim.nixosModules.nixvim
   ];
+
   programs.nixvim = {
     enable = true;
     colorschemes.gruvbox.enable = true;
