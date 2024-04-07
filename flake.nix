@@ -19,7 +19,7 @@
       modules = [
         ./hosts/nixos
 
-        nixvim.nixosModules.nixvim
+        nixvim.homeManagerModules.nixvim
 
 	home-manager.nixosModules.home-manager
 	{
