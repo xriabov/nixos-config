@@ -3,7 +3,7 @@
     "beautysh": {
       "inputs": {
         "nixpkgs": [
-          "nxvim",
+          "nixvim",
           "nixpkgs"
         ],
         "poetry2nix": "poetry2nix",
@@ -78,7 +78,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "nxvim",
+          "nixvim",
           "pre-commit-hooks",
           "nixpkgs"
         ]
@@ -150,7 +150,7 @@
         "type": "github"
       }
     },
-    "nxvim": {
+    "nixvim": {
       "inputs": {
         "beautysh": "beautysh",
         "flake-utils": "flake-utils",
@@ -177,12 +177,12 @@
     "poetry2nix": {
       "inputs": {
         "flake-utils": [
-          "nxvim",
+          "nixvim",
           "beautysh",
           "utils"
         ],
         "nixpkgs": [
-          "nxvim",
+          "nixvim",
           "beautysh",
           "nixpkgs"
         ]
@@ -207,7 +207,7 @@
         "flake-utils": "flake-utils_2",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "nxvim",
+          "nixvim",
           "nixpkgs"
         ],
         "nixpkgs-stable": "nixpkgs-stable"
@@ -230,7 +230,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "nxvim": "nxvim"
+        "nixvim": "nixvim"
       }
     },
     "systems": {

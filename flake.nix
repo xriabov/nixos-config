@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
 
-    nxvim = {
+    nixvim = {
       url = "github:nix-community/nixvim/nixos-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -20,6 +20,8 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/nixos
+        nixvim.nixosModules.nixvim
+        ./modules/nvim
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
