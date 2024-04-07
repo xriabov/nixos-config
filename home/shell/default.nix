@@ -5,7 +5,7 @@
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
 
-    shellALiases = {
+    shellAliases = {
       update = "sudo nixos-rebuild switch --flake /home/pathetic_gull/repos/nixos";
     };
 
