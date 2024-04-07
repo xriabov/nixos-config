@@ -36,11 +36,8 @@
     '';
   };
 
- 
   xdg.configFile."nvim/lua" = {
     recursive = true;
     source = ./lua;
   };
-
-  environment.variables.EDITOR = "nvim";
 }
