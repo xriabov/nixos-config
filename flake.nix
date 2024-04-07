@@ -18,7 +18,7 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/nixos
-
+        ./home/programs/nvim
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
