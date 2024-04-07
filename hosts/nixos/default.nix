@@ -3,7 +3,6 @@
   imports =
     [
       ./hardware-configuration.nix
-      nixvim.nixosModules.nixos
     ];
 
   # Bootloader.
