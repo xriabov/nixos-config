@@ -20,6 +20,7 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/nixos
+        nixvim.nixosModules.nixvim
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
