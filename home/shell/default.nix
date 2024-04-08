@@ -6,7 +6,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      update = "sudo nixos-rebuild switch --flake /home/pathetic_gull/repos/nixos";
+      update = "sudo nixos-rebuild switch --flake /home/pathetic_gull/repos/nixos-config/nixos";
     };
 
     history.size = 10000;

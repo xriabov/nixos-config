@@ -1,7 +1,13 @@
 { pkgs, nixvim, ... }: {
   programs.nixvim = {
     enable = true;
-    colorschemes.gruvbox.enable = true;
-    plugins = {};
+    clipboard.register = "unnamedplus";
+    colorschemes.rose-pine.enable = true;
+    plugins = {
+      treesitter = {
+        enable = true;
+	indent = true;
+      };
+    };
   };
 }
