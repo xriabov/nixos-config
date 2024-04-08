@@ -1,6 +1,0 @@
-#! /usr/bin/env nix-shell
-#! nix-shell -i bash -p bash
-git add .
-git commit -m $1
-git push
-sudo nixos-rebuild switch --flake .

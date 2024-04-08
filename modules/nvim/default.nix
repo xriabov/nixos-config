@@ -9,9 +9,12 @@
       shiftwidth = 4;
       expandtab = true;
     };
+
+    globals.mapleader = " ";
     plugins = {
       treesitter.enable = true;
       oil.enable = true;
+      which-key.enable = true;
       lsp = {
         enable = true;
         servers = {
