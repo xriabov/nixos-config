@@ -5,6 +5,7 @@
   imports = [
     ./programs
     ./shell
+    ./devshells
   ];
 
   home.username = "pathetic_gull";
