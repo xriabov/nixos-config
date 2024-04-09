@@ -9,11 +9,12 @@
       relativenumber = true;
       shiftwidth = 4;
       expandtab = true;
+      
     };
     keymaps = [
       {
-        action = ":Neotree<CR>";
-        key = "T";
+        action = "<CMD>Neotree<CR>";
+        key = "<Leader>t";
         mode = ["n"];
       }      
       {
@@ -49,6 +50,20 @@
       neo-tree = {
         enable = true;
         closeIfLastWindow = true;
+      };
+      nvim-cmp = {
+        enable = true;
+        autoEnableSources = true;
+        sources = [
+          { name = "nvim_lsp"; }
+          { name = "luasnip"; }
+          { name = "path"; }
+        ];
+        mapping = {
+          "<C-n>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<C-p>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          "<C-y>" = "cmp.mapping.confirm({ select = true })";
+        };
       };
     };
   };
