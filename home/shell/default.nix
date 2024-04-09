@@ -14,7 +14,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "rust" "dotnet" "git" "golang" ];
+      plugins = [ "rust" "dotnet" "git" "golang" "direnv" ];
       theme = "jonathan";
     };
   };
