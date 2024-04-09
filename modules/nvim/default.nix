@@ -9,7 +9,8 @@
       relativenumber = true;
       shiftwidth = 4;
       expandtab = true;
-      
+      smartindent = true;
+      autoindent = true;
     };
     keymaps = [
       {
