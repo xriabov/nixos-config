@@ -1,6 +1,7 @@
 { pkgs, nixvim, ... }: {
   programs.nixvim = {
     enable = true;
+    globals.mapleader = " ";
     clipboard.register = "unnamedplus";
     colorschemes.rose-pine.enable = true;
     options = {
@@ -9,12 +10,30 @@
       shiftwidth = 4;
       expandtab = true;
     };
-
-    globals.mapleader = " ";
+    keymaps = [
+      {
+        action = ":Neotree<CR>";
+        key = "T";
+        mode = ["n"];
+      }      
+      {
+        action = "<CMD>Oil<CR>";
+        key = "<Leader>ex";
+      }
+    ];
     plugins = {
       treesitter.enable = true;
       oil.enable = true;
-      which-key.enable = true;
+      which-key = {
+        plugins = {
+          presets.motions = true;
+          presets.nav = true;
+          presets.windows = true;
+        };
+        enable = true;
+        triggers = "auto";
+      };
+
       lsp = {
         enable = true;
         servers = {
@@ -26,6 +45,10 @@
           csharp-ls.enable = true;
           nixd.enable = true;
         };
+      };
+      neo-tree = {
+        enable = true;
+        closeIfLastWindow = true;
       };
     };
   };
