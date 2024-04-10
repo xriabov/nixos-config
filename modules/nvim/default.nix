@@ -52,11 +52,18 @@
         enable = true;
         closeIfLastWindow = true;
       };
+      luasnip = {
+        enable = true;
+      };
+      cmp_luasnip = {
+        enable = true;
+      };
       nvim-cmp = {
         enable = true;
         autoEnableSources = true;
         sources = [
           { name = "nvim_lsp"; }
+          { name = "cmp_luasnip"; }
           { name = "luasnip"; }
           { name = "path"; }
         ];
