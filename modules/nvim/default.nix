@@ -26,6 +26,7 @@
     plugins = {
       treesitter.enable = true;
       oil.enable = true;
+      luasnip.enable = true;
       which-key = {
         plugins = {
           presets.motions = true;
@@ -52,18 +53,12 @@
         enable = true;
         closeIfLastWindow = true;
       };
-      luasnip = {
-        enable = true;
-      };
-      cmp_luasnip = {
-        enable = true;
-      };
       nvim-cmp = {
         enable = true;
         autoEnableSources = true;
+        snippet.expand = "luasnip";
         sources = [
           { name = "nvim_lsp"; }
-          { name = "cmp_luasnip"; }
           { name = "luasnip"; }
           { name = "path"; }
         ];
