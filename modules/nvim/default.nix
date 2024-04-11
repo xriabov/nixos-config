@@ -11,6 +11,7 @@
       expandtab = true;
       smartindent = true;
       autoindent = true;
+      wrap = false;
     };
     keymaps = [
       {
@@ -21,6 +22,25 @@
       {
         action = "<CMD>Oil<CR>";
         key = "<Leader>ex";
+      }
+# Lua keymaps
+      {
+        action = "vim.lsp.buf.definition";
+        key = "gd";
+        mode = ["n"];
+        lua = true;
+      }
+      {
+        action = "vim.lsp.buf.declaration";
+        key = "gD";
+        mode = ["n"];
+        lua = true;
+      }
+      {
+        action = "vim.lsp.buf.references";
+        key = "gr";
+        mode = ["n"];
+        lua = true;
       }
     ];
     plugins = {
@@ -66,6 +86,8 @@
           "<C-n>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<C-p>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<C-y>" = "cmp.mapping.confirm({ select = true })";
+          "<C-f>" = "cmp.mapping.scroll_docs(4)";
+          "<C-b>" = "cmp.mapping.scroll_docs(-4)";
         };
       };
     };
