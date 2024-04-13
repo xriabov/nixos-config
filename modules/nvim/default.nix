@@ -18,10 +18,17 @@
         action = "<CMD>Neotree<CR>";
         key = "<Leader>t";
         mode = ["n"];
-      }      
-      {
+      } {
         action = "<CMD>Oil<CR>";
         key = "<Leader>ex";
+      } {
+        action = "<ESC>";
+        key = "jk";
+        mode = "i";
+      } {
+        action = "<ESC>";
+        key = "kj";
+        mode = "i";
       }
 # Lua keymaps
       {
