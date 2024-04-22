@@ -24,5 +24,8 @@
     # fun
     spotify
     wine64
+
+    # 3d
+    cura
   ];
 }

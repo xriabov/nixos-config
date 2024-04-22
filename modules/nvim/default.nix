@@ -72,7 +72,7 @@
             installRustc = true;
             installCargo = true;
           };
-          csharp-ls.enable = true;
+          omnisharp.enable = true;
           nixd.enable = true;
         };
       };
