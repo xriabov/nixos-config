@@ -21,6 +21,11 @@
     docker
     kubectl
 
+    # desktop
+
+    # utils
+    motrix
+
     # fun
     spotify
     wine64
