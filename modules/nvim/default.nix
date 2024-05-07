@@ -15,10 +15,6 @@
     };
     keymaps = [
       {
-        action = "<CMD>Neotree<CR>";
-        key = "<Leader>t";
-        mode = ["n"];
-      } {
         action = "<CMD>Oil<CR>";
         key = "<Leader>ex";
       } {
@@ -50,6 +46,7 @@
         lua = true;
       }
     ];
+
     plugins = {
       treesitter.enable = true;
       oil.enable = true;
@@ -76,10 +73,7 @@
           nixd.enable = true;
         };
       };
-      neo-tree = {
-        enable = true;
-        closeIfLastWindow = true;
-      };
+
       nvim-cmp = {
         enable = true;
         autoEnableSources = true;

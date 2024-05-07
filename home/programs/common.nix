@@ -25,6 +25,7 @@
 
     # utils
     motrix
+    tor-browser
 
     # fun
     spotify
