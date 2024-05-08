@@ -9,6 +9,7 @@
     jq
     lshw
     wget
+    xxd
 
     # misc
     tree
