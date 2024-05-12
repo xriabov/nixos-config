@@ -36,6 +36,7 @@
     # fun
     spotify
     wine64
+    chiaki # ps remote play
 
   ];
 }

@@ -13,6 +13,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.firewall = {
+    allowedTCPPorts = [];
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Bratislava";
