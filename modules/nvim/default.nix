@@ -73,22 +73,24 @@
           nixd.enable = true;
         };
       };
-
-      nvim-cmp = {
+      
+      cmp = {
         enable = true;
         autoEnableSources = true;
-        snippet.expand = "luasnip";
-        sources = [
-          { name = "nvim_lsp"; }
-          { name = "luasnip"; }
-          { name = "path"; }
-        ];
-        mapping = {
-          "<C-n>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-          "<C-p>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<C-y>" = "cmp.mapping.confirm({ select = true })";
-          "<C-f>" = "cmp.mapping.scroll_docs(4)";
-          "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+        settings = {
+          snippet.expand = "luasnip";
+          sources = [
+            { name = "nvim_lsp"; }
+            { name = "luasnip"; }
+            { name = "path"; }
+          ];
+          mapping = {
+            "<C-n>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+            "<C-p>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+            "<C-y>" = "cmp.mapping.confirm({ select = true })";
+            "<C-f>" = "cmp.mapping.scroll_docs(4)";
+            "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+          };
         };
       };
     };

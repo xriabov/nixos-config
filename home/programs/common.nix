@@ -16,7 +16,7 @@
     which
 
     # db
-    dbeaver
+    dbeaver-bin
 
     # cloud
     docker
