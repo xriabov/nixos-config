@@ -4,7 +4,7 @@
     globals.mapleader = " ";
     clipboard.register = "unnamedplus";
     colorschemes.rose-pine.enable = true;
-    options = {
+    opts = {
       number = true;
       relativenumber = true;
       shiftwidth = 4;
