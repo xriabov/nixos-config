@@ -1,4 +1,4 @@
-{ pkgs, nixvim, ... }: {
+{ nixvim, ... }: {
   programs.nixvim = {
     enable = true;
     globals.mapleader = " ";
@@ -28,29 +28,32 @@
       }
 # Lua keymaps
       {
-        action = "vim.lsp.buf.definition";
+        action.__raw = "vim.lsp.buf.definition";
         key = "gd";
         mode = ["n"];
-        lua = true;
       }
       {
-        action = "vim.lsp.buf.declaration";
+        action.__raw = "vim.lsp.buf.declaration";
         key = "gD";
         mode = ["n"];
-        lua = true;
       }
       {
-        action = "vim.lsp.buf.references";
+        action.__raw = "vim.lsp.buf.references";
         key = "gr";
         mode = ["n"];
-        lua = true;
       }
     ];
 
     plugins = {
       treesitter.enable = true;
       oil.enable = true;
+
+      cmp_luasnip.enable = true;
       luasnip.enable = true;
+      cmp-nvim-lsp.enable = true;
+      cmp-path.enable = true;
+      cmp-buffer.enable = true;
+
       which-key = {
         plugins = {
           presets.motions = true;
@@ -71,6 +74,7 @@
           };
           omnisharp.enable = true;
           nixd.enable = true;
+          gopls.enable = true;
         };
       };
       
@@ -78,9 +82,14 @@
         enable = true;
         autoEnableSources = true;
         settings = {
-          snippet.expand = "luasnip";
+          snippet.expand = ''
+  function(args)
+    require('luasnip').lsp_expand(args.body)
+  end
+'';
           sources = [
             { name = "nvim_lsp"; }
+            { name = "buffer"; }
             { name = "luasnip"; }
             { name = "path"; }
           ];

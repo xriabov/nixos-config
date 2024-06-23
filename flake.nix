@@ -38,7 +38,7 @@
       modules = [
         ./hosts/wsl
         nixvim.nixosModules.nixvim
-        ./modules/nvim
+        (import ./modules/nvim (inputs))
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
