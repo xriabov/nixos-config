@@ -10,6 +10,7 @@
     lshw
     wget
     xxd
+    tmux
 
     # misc
     tree
