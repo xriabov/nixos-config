@@ -11,6 +11,7 @@
     wget
     xxd
     tmux
+    k6
 
     # misc
     tree
