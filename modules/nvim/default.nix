@@ -78,6 +78,10 @@
           gopls.enable = true;
         };
       };
+
+      copilot-vim = {
+        enable = true;
+      };
       
       cmp = {
         enable = true;

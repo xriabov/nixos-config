@@ -12,6 +12,7 @@
     xxd
     tmux
     k6
+    amqpcat
 
     # misc
     tree

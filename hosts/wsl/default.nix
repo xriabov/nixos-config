@@ -18,7 +18,7 @@
   users.users.pathetic_gull = {
     isNormalUser = true;
     description = "Nikita Riabov";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     ];
     shell = pkgs.zsh;
