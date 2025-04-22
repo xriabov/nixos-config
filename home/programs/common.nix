@@ -6,6 +6,7 @@
     unzip
 
     # utils
+    zoxide
     jq
     lshw
     wget
@@ -13,6 +14,7 @@
     tmux
     k6
     amqpcat
+    gh
 
     # misc
     tree
@@ -35,7 +37,5 @@
     spotify
     wine64
 
-    # 3d
-    cura
   ];
 }

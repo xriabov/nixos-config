@@ -62,7 +62,6 @@
           presets.windows = true;
         };
         enable = true;
-        triggers = "auto";
       };
 
       lsp = {

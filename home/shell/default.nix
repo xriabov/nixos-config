@@ -14,8 +14,16 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "rust" "dotnet" "git" "golang" "direnv" ];
+      plugins = [ "rust" "dotnet" "git" "golang" "direnv" "zoxide" ];
       theme = "jonathan";
     };
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+    options = [
+        "--cmd cd"
+    ];
   };
 }
